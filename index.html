@@ -48,17 +48,20 @@
     <!-- About -->
     <div id="about" style="padding-top:5px; padding-bottom:5px">
         <div id="aboutTextWrapper">
+            <hr>
             <br>
             <p class="about-text" style="margin-top:25px;margin-bottom:45px;">Matt Kruggel is originally from
-                    Sharon Center, Ohio and holds degrees in Musical Theatre and Spanish from Ashland University.
-                    Shortly after graduating, he spent some time in the Chicago theatre world performing at such theatres as Chicago Shakespeare
-                    Theatre, Theatre at the
-                    Center, Quest Theatre Ensemble, Theatre Building Chicago and Porchlight Music Theatre. Favorite past
-                    roles include: Matt in
-                    FANTASTICKS, Rapunzel's Prince in INTO THE WOODS, Jimmy in THOROUGHLY MODERN MILLIE and Benjy Stone
-                    in MY FAVORITE YEAR. New York
-                    Credit: Howard Carter in THE MYSTERY OF KING TUT (Theatreworks/USA)</p>
+                Sharon Center, Ohio and holds degrees in Musical Theatre and Spanish from Ashland University.
+                Shortly after graduating, he spent some time in the Chicago theatre world performing at such theatres as
+                Chicago Shakespeare
+                Theatre, Theatre at the
+                Center, Quest Theatre Ensemble, Theatre Building Chicago and Porchlight Music Theatre. Favorite past
+                roles include: Matt in
+                FANTASTICKS, Rapunzel's Prince in INTO THE WOODS, Jimmy in THOROUGHLY MODERN MILLIE and Benjy Stone
+                in MY FAVORITE YEAR. New York
+                Credit: Howard Carter in THE MYSTERY OF KING TUT (Theatreworks/USA)</p>
             <br>
+            <hr>
         </div>
     </div>
 
@@ -69,10 +72,21 @@
         </div>
     </div>
 
+    <!-- Videos -->
     <div style="padding-top:5px; padding-bottom:5px">
-
-        Audio Goes Here
-
+        <hr>
+        <div class="video w3-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dKKr2m1IFhQ" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <br>
+        <div class="video w3-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4_bm1YO_F1Q" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <hr>
     </div>
 
     <!-- Third Parallax Image -->
@@ -82,25 +96,32 @@
         </div>
     </div>
 
-    <div class="headshots" style="padding-top:5px; padding-bottom:5px">
+    <div class="gallery w3-center" style="padding-top:5px; padding-bottom:5px; width: 75vw;">
         <br>
-        <div class="w3-center">
-            <img src="photos/headshots/04052017_MattBugay_123_ret.jpg" style="width: 20%; height: auto;" class="w3-center">
+
+        <div>
+            <img src="photos/headshots/04052017_MattBugay_123_ret.jpg" style="width: 20%; height: auto;"
+                class="w3-center"></img>
         </div>
-        <div class="w3-center">
-            <img src="photos/headshots/04052017_MattBugay_059_ret-X2.jpg" style="width: 20%; height: auto;" class="w3-center">
+        <div>
+            <img src="photos/headshots/04052017_MattBugay_059_ret-X2.jpg" style="width: 20%; height: auto;"
+                class="w3-center"></img>
         </div>
-        <div class="w3-center">
-             <img src="photos/headshots/04052017_MattBugay_206_ret.jpg" style="width: 20%; height: auto;" class="w3-center">
+        <div>
+            <img src="photos/headshots/04052017_MattBugay_206_ret.jpg" style="width: 20%; height: auto;"
+                class="w3-center"></img>
         </div>
+
         <br>
     </div>
+
+    <hr>
 
     <!-- Contact -->
     <div class="w3-content w3-container w3-padding-64 wrapper" id="contact">
         <h3 class="w3-center">Contact Matt!</h3>
         <div class="w3-center">
-            <a href="mailto:mjbugay@yahoo.com" class="w3-center btn contact-button">Email</a>
+            <a href="mailto:kruggel.matt@gmail.com" class="w3-center btn contact-button">Email</a>
         </div>
     </div>
 
@@ -138,13 +159,11 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
-    <!-- TODO: Set up Matt a SquareSend Account -->
-<!-- <script src="https://squaresend.com/squaresend.js"></script> -->
+<script src="https://squaresend.com/squaresend.js"></script>
 <script>
 
     $(document).ready(function () {
-        $('.headshots').slick({
+        $('.gallery').slick({
             autoplay: true,
             arrows: false,
             dots: true,
