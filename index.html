@@ -73,16 +73,16 @@
     </div>
 
     <!-- Videos -->
-    <div style="padding-top:5px; padding-bottom:5px">
+    <div class="w3-content w3-container w3-padding-64 video" id="video" style="padding-top:5px; padding-bottom:5px">
         <hr>
         <div class="video w3-center">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dKKr2m1IFhQ" frameborder="0"
+            <iframe id="video1" width="100%" src="https://www.youtube.com/embed/dKKr2m1IFhQ" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
         <br>
         <div class="video w3-center">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/4_bm1YO_F1Q" frameborder="0"
+            <iframe id="video2" width="100%" src="https://www.youtube.com/embed/4_bm1YO_F1Q" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
@@ -96,23 +96,21 @@
         </div>
     </div>
 
-    <div class="gallery w3-center" style="padding-top:5px; padding-bottom:5px; width: 75vw;">
-        <br>
-
-        <div>
-            <img src="photos/headshots/04052017_MattBugay_123_ret.jpg" style="width: 20%; height: auto;"
-                class="w3-center"></img>
+    <div class="w3-content w3-container w3-padding-64 video w3-center">
+        <div class="gallery w3-center" style="padding-top:5px; padding-bottom:5px; width: 75vw;">
+            <div>
+                <img src="photos/headshots/04052017_MattBugay_123_ret.jpg" style="width: 25vw; height: auto;"
+                    class="w3-center"></img>
+            </div>
+            <div>
+                <img src="photos/headshots/04052017_MattBugay_059_ret-X2.jpg" style="width: 25vw; height: auto;"
+                    class="w3-center"></img>
+            </div>
+            <div>
+                <img src="photos/headshots/04052017_MattBugay_206_ret.jpg" style="width: 25vw; height: auto;"
+                    class="w3-center"></img>
+            </div>
         </div>
-        <div>
-            <img src="photos/headshots/04052017_MattBugay_059_ret-X2.jpg" style="width: 20%; height: auto;"
-                class="w3-center"></img>
-        </div>
-        <div>
-            <img src="photos/headshots/04052017_MattBugay_206_ret.jpg" style="width: 20%; height: auto;"
-                class="w3-center"></img>
-        </div>
-
-        <br>
     </div>
 
     <hr>
@@ -170,6 +168,12 @@
             speed: 1000,
             autoplaySpeed: 7000,
         });
+
+        var videoWidth = $('#video1').width();
+        var height = videoWidth / 16 * 9;
+        $('#video1').height(height);
+        $('#video2').height(height);
+
     })
 
 </script>
