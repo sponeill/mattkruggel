@@ -24,6 +24,10 @@
     text-align: center;
 }
 
+.photo {
+    width: 10%;
+}
+
 .footer-link{
     margin: 15px;
     text-decoration: none;
