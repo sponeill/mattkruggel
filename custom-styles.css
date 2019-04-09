@@ -173,3 +173,20 @@ html {
         min-height: 400px;
     }
 }
+
+.slick-track {
+    display: flex;
+  }
+
+  .slick-track .slick-slide {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slick-image {
+    width:25vw;
+    height:auto;
+    margin:0 auto;
+  }
